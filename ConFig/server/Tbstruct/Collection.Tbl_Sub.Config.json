@@ -1,0 +1,131 @@
+{
+  "Db": "Collection",
+  "Fields": [
+    {
+      "Field": "ID",
+      "FieldCn": "主键ID",
+      "ChangeCol": "0",
+      "IdentCmb": "0",
+      "IfOutList": "0",
+      "IfOutHidden": "0",
+      "IfSearch": "0",
+      "IfConst": "0",
+      "DataType": "bigint",
+      "MaxLeng": "8"
+    },
+    {
+      "Field": "ParentCode",
+      "FieldCn": "联表Code",
+      "ChangeCol": "0",
+      "IdentCmb": "0",
+      "IfOutList": "0",
+      "IfOutHidden": "0",
+      "IfSearch": "0",
+      "IfConst": "0",
+      "DataType": "nvarchar",
+      "MaxLeng": "100"
+    },
+    {
+      "Field": "SubA",
+      "FieldCn": "内容一",
+      "ChangeCol": "0",
+      "IdentCmb": "0",
+      "IfOutList": "0",
+      "IfOutHidden": "0",
+      "IfSearch": "0",
+      "IfConst": "0",
+      "DataType": "nvarchar",
+      "MaxLeng": "100"
+    },
+    {
+      "Field": "SubB",
+      "FieldCn": "内容二",
+      "ChangeCol": "0",
+      "IdentCmb": "0",
+      "IfOutList": "0",
+      "IfOutHidden": "0",
+      "IfSearch": "0",
+      "IfConst": "0",
+      "DataType": "nvarchar",
+      "MaxLeng": "100"
+    },
+    {
+      "Field": "CreateDate",
+      "FieldCn": "创建时间",
+      "ChangeCol": "0",
+      "IdentCmb": "0",
+      "IfOutList": "0",
+      "IfOutHidden": "0",
+      "IfSearch": "0",
+      "IfConst": "0",
+      "DataType": "datetime",
+      "MaxLeng": "8"
+    },
+    {
+      "Field": "LastModiDate",
+      "FieldCn": "修改时间",
+      "ChangeCol": "0",
+      "IdentCmb": "0",
+      "IfOutList": "0",
+      "IfOutHidden": "0",
+      "IfSearch": "0",
+      "IfConst": "0",
+      "DataType": "datetime",
+      "MaxLeng": "8"
+    },
+    {
+      "Field": "Author",
+      "FieldCn": "创建用户",
+      "ChangeCol": "0",
+      "IdentCmb": "0",
+      "IfOutList": "0",
+      "IfOutHidden": "0",
+      "IfSearch": "0",
+      "IfConst": "0",
+      "DataType": "nvarchar",
+      "MaxLeng": "100"
+    },
+    {
+      "Field": "Manager",
+      "FieldCn": "维护用户",
+      "ChangeCol": "0",
+      "IdentCmb": "0",
+      "IfOutList": "0",
+      "IfOutHidden": "0",
+      "IfSearch": "0",
+      "IfConst": "0",
+      "DataType": "nvarchar",
+      "MaxLeng": "100"
+    },
+    {
+      "Field": "DelFlg",
+      "FieldCn": "删除标记",
+      "ChangeCol": "0",
+      "IdentCmb": "0",
+      "IfOutList": "0",
+      "IfOutHidden": "0",
+      "IfSearch": "0",
+      "IfConst": "0",
+      "DataType": "int",
+      "MaxLeng": "4"
+    },
+    {
+      "Field": "UnitCode",
+      "FieldCn": "数据分组标记",
+      "ChangeCol": "0",
+      "IdentCmb": "0",
+      "IfOutList": "0",
+      "IfOutHidden": "0",
+      "IfSearch": "0",
+      "IfConst": "0",
+      "DataType": "nvarchar",
+      "MaxLeng": "100"
+    }
+  ],
+  "InLink": [],
+  "OutLink": [
+    
+  ],
+  "Tb": "Tbl_Sub",
+  "TbCn": "子表"
+}

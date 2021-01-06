@@ -1,0 +1,17 @@
+{
+  "ConnectionStr": "Data Source=*;Initial Catalog=SysLog;User ID=*;Password=*;Integrated Security=false;",
+  "BulkCopy":"Data Source=*;User ID=*;pwd=*;Persist Security Info=True;Initial Catalog=YrTrace;",
+  "Redis": {
+    "Host": "127.0.0.1:6379",
+    "Pwd": "password=*",
+    "DataNumber": {
+      "UserKey": "0",
+      "TbStruct": "1",
+      "ServerCode": "2",
+      "MenuCode": "3",
+      "ApiServer": "4"
+    }
+  },
+  "ImintConfig": "1",
+  "TraceUrl":"http://8.129.42.175:3006/Trace/"
+}

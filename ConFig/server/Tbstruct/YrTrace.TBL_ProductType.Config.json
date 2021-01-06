@@ -1,0 +1,189 @@
+{
+    "Db": "YrTrace",
+    "Tb": "TBL_ProductType",
+    "TbCn": "产品类型",
+    "OutLink": [
+        {
+            "OutLine": "SysConfig.dbo.Tbl_Uint",
+            "owner": "UnitCode",
+            "onfield": "Code",
+            "Fileds": [
+                {
+                  "Col": "CodeCn",
+                  "ColName": "机构名称",
+                  "ComboRestlt": "Get*U-002000-100149"
+                }
+            ]
+        }     
+    ],
+    "Fields": [
+        {
+            "Field": "ID",
+            "FieldCn": "ID",
+            "ChangeCol": "0",
+            "IdentCmb": "0",
+            "IfOutList": "0",
+            "IfOutHidden": "0",
+            "IfSearch": "1",
+            "IfConst": "0",
+            "DataType": "int",
+            "MaxLeng": "4",
+            "ConstValue": "",
+            "ComboRestlt": ""
+        },
+        {
+            "Field": "Code",
+            "FieldCn": "编号",
+            "ChangeCol": "0",
+            "IdentCmb": "0",
+            "IfOutList": "0",
+            "IfOutHidden": "0",
+            "IfSearch": "0",
+            "IfConst": "0",
+            "DataType": "nvarchar",
+            "MaxLeng": "100",
+            "ConstValue": "",
+            "ComboRestlt": ""
+        },
+        {
+            "Field": "Name",
+            "FieldCn": "名称",
+            "ChangeCol": "0",
+            "IdentCmb": "0",
+            "IfOutList": "0",
+            "IfOutHidden": "0",
+            "IfSearch": "1",
+            "IfConst": "0",
+            "DataType": "nvarchar",
+            "MaxLeng": "100",
+            "ConstValue": "",
+            "ComboRestlt": ""
+        },
+        {
+            "Field": "Explan",
+            "FieldCn": "描述",
+            "ChangeCol": "0",
+            "IdentCmb": "0",
+            "IfOutList": "0",
+            "IfOutHidden": "1",
+            "IfSearch": "0",
+            "IfConst": "0",
+            "DataType": "nvarchar",
+            "MaxLeng": "200",
+            "ConstValue": "",
+            "ComboRestlt": ""
+        },
+        {
+            "Field": "Sort",
+            "FieldCn": "排序",
+            "ChangeCol": "0",
+            "IdentCmb": "_isNumber",
+            "IfOutList": "0",
+            "IfOutHidden": "0",
+            "IfSearch": "0",
+            "IfConst": "0",
+            "DataType": "int",
+            "MaxLeng": "4",
+            "ConstValue": "",
+            "ComboRestlt": ""
+        },
+        {
+            "Field": "IsEnable",
+            "FieldCn": "状态",
+            "ChangeCol": "0",
+            "IdentCmb": "0",
+            "IfOutList": "0",
+            "IfOutHidden": "0",
+            "IfSearch": "0",
+            "IfConst": "1",
+            "DataType": "nvarchar",
+            "MaxLeng": "40",
+            "ConstValue": "001",
+            "ComboRestlt": ""
+        },
+        {
+            "Field": "CreateDate",
+            "FieldCn": "创建时间",
+            "ChangeCol": "0",
+            "IdentCmb": "0",
+            "IfOutList": "0",
+            "IfOutHidden": "0",
+            "IfSearch": "0",
+            "IfConst": "0",
+            "DataType": "datetime",
+            "MaxLeng": "8",
+            "ConstValue": "",
+            "ComboRestlt": ""
+        },
+        {
+            "Field": "LastModiDate",
+            "FieldCn": "修改时间",
+            "ChangeCol": "0",
+            "IdentCmb": "0",
+            "IfOutList": "0",
+            "IfOutHidden": "1",
+            "IfSearch": "0",
+            "IfConst": "0",
+            "DataType": "datetime",
+            "MaxLeng": "8",
+            "ConstValue": "",
+            "ComboRestlt": ""
+        },
+        {
+            "Field": "Author",
+            "FieldCn": "创建用户",
+            "ChangeCol": "0",
+            "IdentCmb": "0",
+            "IfOutList": "0",
+            "IfOutHidden": "1",
+            "IfSearch": "0",
+            "IfConst": "0",
+            "DataType": "nvarchar",
+            "MaxLeng": "100",
+            "ConstValue": "",
+            "ComboRestlt": ""
+        },
+        {
+            "Field": "Manager",
+            "FieldCn": "维护用户",
+            "ChangeCol": "0",
+            "IdentCmb": "0",
+            "IfOutList": "0",
+            "IfOutHidden": "1",
+            "IfSearch": "0",
+            "IfConst": "0",
+            "DataType": "nvarchar",
+            "MaxLeng": "100",
+            "ConstValue": "",
+            "ComboRestlt": ""
+        },
+        {
+            "Field": "DelFlg",
+            "FieldCn": "删除标记",
+            "ChangeCol": "0",
+            "IdentCmb": "0",
+            "IfOutList": "0",
+            "IfOutHidden": "1",
+            "IfSearch": "0",
+            "IfConst": "0",
+            "DataType": "int",
+            "MaxLeng": "4",
+            "ConstValue": "",
+            "ComboRestlt": ""
+        },
+        {
+            "Field": "UnitCode",
+            "FieldCn": "机构",
+            "ChangeCol": "1",
+            "IdentCmb": "0",
+            "IfOutList": "0",
+            "IfOutHidden": "1",
+            "IfSearch": "0",
+            "IfConst": "0",
+            "DataType": "nvarchar",
+            "MaxLeng": "50",
+            "ConstValue": "",
+            "ComboRestlt": "Get*U-002000-100149"
+        }
+    ]
+}

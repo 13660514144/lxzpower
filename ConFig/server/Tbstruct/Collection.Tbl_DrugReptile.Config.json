@@ -1,0 +1,334 @@
+{
+    "Db": "Collection",
+    "Tb": "Tbl_DrugReptile",
+    "TbCn": "药品爬虫",
+    "OutLink": [
+        {
+          "OutLine": "Collection.dbo.Tbl_ParityUnit",
+          "owner": "ParityId",
+          "onfield": "ParityId",
+          "Fileds": [
+            {
+              "Col": "Name",
+              "ColName": "平台名称",
+              "ComboRestlt": "Get*U-002000-100147"
+            }
+          ]
+        }
+    ],
+    "Fields": [
+        {
+            "Field": "ID",
+            "FieldCn": "主键ID",
+            "ChangeCol": "0",
+            "IdentCmb": "0",
+            "IfOutList": "0",
+            "IfOutHidden": "0",
+            "IfSearch": "0",
+            "IfConst": "0",
+            "DataType": "bigint",
+            "MaxLeng": "8",
+            "ConstValue": "",
+            "ComboRestlt": ""
+        },
+        {
+            "Field": "Code",
+            "FieldCn": "平台品种编码",
+            "ChangeCol": "0",
+            "IdentCmb": "0",
+            "IfOutList": "0",
+            "IfOutHidden": "0",
+            "IfSearch": "0",
+            "IfConst": "0",
+            "DataType": "nvarchar",
+            "MaxLeng": "100",
+            "ConstValue": "",
+            "ComboRestlt": ""
+        },
+        {
+            "Field": "Name",
+            "FieldCn": "平台品种名称",
+            "ChangeCol": "0",
+            "IdentCmb": "_isNull",
+            "IfOutList": "0",
+            "IfOutHidden": "1",
+            "IfSearch": "1",
+            "IfConst": "0",
+            "DataType": "nvarchar",
+            "MaxLeng": "600",
+            "ConstValue": "",
+            "ComboRestlt": ""
+        },
+        {
+            "Field": "Des",
+            "FieldCn": "规格",
+            "ChangeCol": "0",
+            "IdentCmb": "_isNull",
+            "IfOutList": "0",
+            "IfOutHidden": "0",
+            "IfSearch": "0",
+            "IfConst": "0",
+            "DataType": "nvarchar",
+            "MaxLeng": "200",
+            "ConstValue": "",
+            "ComboRestlt": ""
+        },
+        {
+            "Field": "Ent",
+            "FieldCn": "厂家",
+            "ChangeCol": "0",
+            "IdentCmb": "0",
+            "IfOutList": "0",
+            "IfOutHidden": "0",
+            "IfSearch": "1",
+            "IfConst": "0",
+            "DataType": "nvarchar",
+            "MaxLeng": "200",
+            "ConstValue": "",
+            "ComboRestlt": ""
+        },
+        {
+            "Field": "Place",
+            "FieldCn": "产地",
+            "ChangeCol": "0",
+            "IdentCmb": "0",
+            "IfOutList": "0",
+            "IfOutHidden": "0",
+            "IfSearch": "0",
+            "IfConst": "0",
+            "DataType": "nvarchar",
+            "MaxLeng": "200",
+            "ConstValue": "",
+            "ComboRestlt": ""
+        },
+        {
+            "Field": "Unit",
+            "FieldCn": "单位",
+            "ChangeCol": "0",
+            "IdentCmb": "0",
+            "IfOutList": "0",
+            "IfOutHidden": "0",
+            "IfSearch": "0",
+            "IfConst": "0",
+            "DataType": "nvarchar",
+            "MaxLeng": "100",
+            "ConstValue": "",
+            "ComboRestlt": ""
+        },
+        {
+            "Field": "Pre",
+            "FieldCn": "批发价",
+            "ChangeCol": "0",
+            "IdentCmb": "_isDecimal",
+            "IfOutList": "0",
+            "IfOutHidden": "0",
+            "IfSearch": "0",
+            "IfConst": "0",
+            "DataType": "nvarchar",
+            "MaxLeng": "100",
+            "ConstValue": "",
+            "ComboRestlt": ""
+        },
+        {
+            "Field": "Ret",
+            "FieldCn": "零售价",
+            "ChangeCol": "0",
+            "IdentCmb": "_isDecimal",
+            "IfOutList": "0",
+            "IfOutHidden": "0",
+            "IfSearch": "0",
+            "IfConst": "0",
+            "DataType": "nvarchar",
+            "MaxLeng": "100",
+            "ConstValue": "",
+            "ComboRestlt": ""
+        },
+        {
+            "Field": "Img",
+            "FieldCn": "图片URL",
+            "ChangeCol": "0",
+            "IdentCmb": "0",
+            "IfOutList": "0",
+            "IfOutHidden": "1",
+            "IfSearch": "0",
+            "IfConst": "0",
+            "DataType": "nvarchar",
+            "MaxLeng": "300",
+            "ConstValue": "",
+            "ComboRestlt": ""
+        },
+        {
+            "Field": "Rmark",
+            "FieldCn": "备注",
+            "ChangeCol": "0",
+            "IdentCmb": "0",
+            "IfOutList": "0",
+            "IfOutHidden": "1",
+            "IfSearch": "0",
+            "IfConst": "0",
+            "DataType": "nvarchar",
+            "MaxLeng": "100",
+            "ConstValue": "",
+            "ComboRestlt": ""
+        },
+        {
+            "Field": "BarCode",
+            "FieldCn": "条码",
+            "ChangeCol": "0",
+            "IdentCmb": "0",
+            "IfOutList": "0",
+            "IfOutHidden": "1",
+            "IfSearch": "0",
+            "IfConst": "0",
+            "DataType": "nvarchar",
+            "MaxLeng": "200",
+            "ConstValue": "",
+            "ComboRestlt": ""
+        },
+        {
+            "Field": "ParityId",
+            "FieldCn": "平台编码",
+            "ChangeCol": "1",
+            "IdentCmb": "0",
+            "IfOutList": "0",
+            "IfOutHidden": "1",
+            "IfSearch": "1",
+            "IfConst": "0",
+            "DataType": "nvarchar",
+            "MaxLeng": "100",
+            "ConstValue": "",
+            "ComboRestlt": "Get*U-002000-100147"
+        },
+        {
+            "Field": "IsEnabled",
+            "FieldCn": "是否有效",
+            "ChangeCol": "0",
+            "IdentCmb": "0",
+            "IfOutList": "0",
+            "IfOutHidden": "0",
+            "IfSearch": "1",
+            "IfConst": "1",
+            "DataType": "nvarchar",
+            "MaxLeng": "100",
+            "ConstValue": "000",
+            "ComboRestlt": ""
+        },
+        {
+            "Field": "Status",
+            "FieldCn": "状态",
+            "ChangeCol": "0",
+            "IdentCmb": "0",
+            "IfOutList": "0",
+            "IfOutHidden": "0",
+            "IfSearch": "1",
+            "IfConst": "1",
+            "DataType": "nvarchar",
+            "MaxLeng": "100",
+            "ConstValue": "001",
+            "ComboRestlt": ""
+        },
+        {
+            "Field": "CreateDate",
+            "FieldCn": "创建时间",
+            "ChangeCol": "0",
+            "IdentCmb": "0",
+            "IfOutList": "0",
+            "IfOutHidden": "1",
+            "IfSearch": "1",
+            "IfConst": "0",
+            "DataType": "datetime",
+            "MaxLeng": "8",
+            "ConstValue": "",
+            "ComboRestlt": ""
+        },
+        {
+            "Field": "LastModiDate",
+            "FieldCn": "修改时间",
+            "ChangeCol": "0",
+            "IdentCmb": "0",
+            "IfOutList": "0",
+            "IfOutHidden": "1",
+            "IfSearch": "0",
+            "IfConst": "0",
+            "DataType": "datetime",
+            "MaxLeng": "8",
+            "ConstValue": "",
+            "ComboRestlt": ""
+        },
+        {
+            "Field": "Author",
+            "FieldCn": "创建用户",
+            "ChangeCol": "0",
+            "IdentCmb": "0",
+            "IfOutList": "0",
+            "IfOutHidden": "1",
+            "IfSearch": "0",
+            "IfConst": "0",
+            "DataType": "nvarchar",
+            "MaxLeng": "100",
+            "ConstValue": "",
+            "ComboRestlt": ""
+        },
+        {
+            "Field": "Manager",
+            "FieldCn": "维护用户",
+            "ChangeCol": "0",
+            "IdentCmb": "0",
+            "IfOutList": "0",
+            "IfOutHidden": "1",
+            "IfSearch": "0",
+            "IfConst": "0",
+            "DataType": "nvarchar",
+            "MaxLeng": "100",
+            "ConstValue": "",
+            "ComboRestlt": ""
+        },
+        {
+            "Field": "DelFlg",
+            "FieldCn": "删除标记",
+            "ChangeCol": "0",
+            "IdentCmb": "0",
+            "IfOutList": "0",
+            "IfOutHidden": "1",
+            "IfSearch": "0",
+            "IfConst": "0",
+            "DataType": "int",
+            "MaxLeng": "4",
+            "ConstValue": "",
+            "ComboRestlt": ""
+        },
+        {
+            "Field": "UnitCode",
+            "FieldCn": "数据分组标记",
+            "ChangeCol": "0",
+            "IdentCmb": "0",
+            "IfOutList": "0",
+            "IfOutHidden": "1",
+            "IfSearch": "0",
+            "IfConst": "0",
+            "DataType": "nvarchar",
+            "MaxLeng": "100",
+            "ConstValue": "",
+            "ComboRestlt": ""
+        }
+    ]    
+    ,
+     "SubList": {
+        "Db": "Collection",
+        "Tb": "Tbl_Sub"
+      },
+      "ScheduleList": [
+        {
+          "Db": "Collection",
+          "Tb": "Tbl_ScheduleA"
+        },
+        {
+          "Db": "Collection",
+          "Tb": "Tbl_ScheduleB"
+        }
+      ],
+      "AttachList": {
+        "Db": "AttachStore",
+        "Tb": "Tbl_AttachList"
+      }     
+}
