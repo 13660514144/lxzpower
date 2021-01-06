@@ -7,6 +7,7 @@
 # HttpReports  监控台
 # demo www.lxzpower.com
 # 依赖项
+# MsSql2008 redis
 # log4net 2.0.10   ●
 #  Microsoft.AspNetCore.Http 2.1.1   ●
 # Microsoft.Extensions.DependencyInjection 3.1.8
