@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <meta http-equiv="Cache" content="no-cache">
+    <title>文件上传</title>
+    <link rel="stylesheet" id="templatecss" type="text/css" href="/css/Form.css?v=5">
+    <link rel="stylesheet" id="Tb" type="text/css" href="/css/Formtable.css">
+    <link rel="stylesheet" type="text/css" href="/css/daterangepicker.css">
+    <link rel="stylesheet" id="Btn" type="text/css" href="/BtnCSS/set_5.css">
+    <style type="text/css">
+        .div1 {
+            width: 400px;
+            height: 320px;
+            border: 0px;
+            display: table-cell;
+            vertical-align: middle;float:right;top:100px;position:absolute;right:30px;
+        }
+		
+            .div1 img {
+                max-width: 100%;
+                max-height: 100%;
+                display: block;
+                margin: auto;
+            }
+    </style>
+
+
+</head>
+<body>
+    <div id="comment">
+        <div id="poptitle">
+            <div style="width: 26px; height: 26px; line-height: 26px; font-size: 26px; border: 1px solid #3c3939; float: right; text-align: center; cursor: pointer;" onclick="_TitleClsWin()">X</div>
+        </div>
+        <form id="form1" name="form1" method="post" class="bootstrap-frm">
+            <h1>文件上传
+          <span></span>
+            </h1>
+            <label>
+                <span>选择文件</span>
+                <input id="fileToUpload" type="file" name="fileToUpload" onchange="fileSelected()" multiple="multiple"  />
+            </label>
+            <div style="clear: both;"></div>
+            <label>
+                <span>选择类型</span>
+                <select id="FileType">
+                    <option value="">请选择</option>
+                    <option value="008000">Logo</option>
+                    <option value="008001">文件</option>
+                    <option value="008002">图片</option>
+                </select>
+            </label>
+            <div style="clear: both;"></div>
+            <label>
+                <span>Name</span>
+                <b id="Name"></b>
+            </label>
+           <div style="clear: both;"></div>
+            <label>
+                <span>Size</span>
+                <b id="Size"></b>
+            </label>
+            <div style="clear: both;"></div>
+            <label>
+                <span>Type</span>
+                <b id="Type"></b>
+            </label>
+            <div style="clear: both;"></div>
+            <label>
+                <span></span>
+                <progress id="progressNumber" max="100" value="0">0</progress>
+            </label>
+            <div style="clear: both;"></div>            
+        </form>
+    </div>
+    <div id="dd" class="div1"></div>
+    <div id="footer">
+        <button  id="Up" onclick="Up_Click()">提交</button>
+    </div>
+    <table id="SubList" style="margin-bottom:55px;"></table>
+    <script type="text/javascript">
+        var Win = parent;        
+        var LocalItem = '';
+        var progress = document.getElementById('progressNumber');  
+        var Upfile;
+        var Tb = document.getElementById('SubList');
+		var _AgainName;
+
+        function CallBackPageLoad(data) {
+            _ErrMsg(data.Msg);
+            if (data.scuess) {
+                SetTbAttach(data.Result.Data);
+            }
+        }
+
+        function fileSelected() {
+            var file = document.getElementById('fileToUpload').files[0];            
+            if (file) {
+                var fileSize = 0;
+                if (file.size > 1024 * 1024) {
+                    fileSize = (Math.round(file.size * 100 / (1024 * 1024)) / 100).toString() + 'MB';
+                }
+                else {
+                    fileSize = (Math.round(file.size * 100 / 1024) / 100).toString() + 'KB';
+                }
+                document.getElementById('Name').innerHTML = 'Name: ' + file.name;
+                document.getElementById('Size').innerHTML = 'Size: ' + fileSize;
+                document.getElementById('Type').innerHTML = 'Type: ' + file.type;
+                           
+            }
+        }
+        function Up_Click() {
+			var xhr;
+			if (window.XMLHttpRequest) {
+				xhr = new XMLHttpRequest();
+			} else {
+				xhr = new ActiveXObject("Microsoft.XMLHTTP");
+			}			
+ 
+			
+            var fd = new FormData();
+            fd.append("file", document.getElementById('fileToUpload').files[0]);
+            fd.append("SysCode",'002000');
+            fd.append("ParentCode", '2011');
+
+            xhr.upload.addEventListener("progress", uploadProgress, false);
+            xhr.addEventListener("load", uploadComplete, false);
+            //xhr.addEventListener("error", uploadFailed, false);
+            //xhr.addEventListener("abort", uploadCanceled, false);
+            xhr.open("POST", "/api/fileservice/UpLoadFileSave", true);
+            xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
+            xhr.send(fd);
+        }       
+function uploadProgress(evt) {
+    if (evt.lengthComputable) {
+        var complete = (event.loaded / event.total * 100 | 0);
+        progress.value = progress.innerHTML = complete;
+    }
+    else {
+        document.getElementById('progressNumber').innerHTML = '无法计算';
+    }
+}
+
+function uploadComplete(evt) {
+    /* 当服务器响应后，这个事件就会被触发 */
+    console.log(evt.target.responseText);
+    
+}        
+
+    </script>
+</body>
+</html>
