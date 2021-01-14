@@ -4,6 +4,7 @@
 # IdentityCenter 认证中心
 # GateWay 网关、负载均衡
 # FileServer  文件服务
+# HelperTools 引用集合
 # HttpReports  监控台
 # demo www.lxzpower.com
 # 依赖项
