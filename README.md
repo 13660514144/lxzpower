@@ -22,3 +22,5 @@
 # System.Configuration.ConfigurationManager 5.0.0 ●
 # System.Drawing.Common  5.0 ●
 # WeChat  :lxzpower
+
+适用范围：可以开发OA、ERP、BPM、CRM、WMS、TMS、MIS、BI、电商平台后台、物流管理系统、快递管理系统、教务管理系统等各类管理软件
